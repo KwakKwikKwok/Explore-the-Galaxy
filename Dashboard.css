@@ -90,3 +90,67 @@ h2{
     letter-spacing: 0.1em;
 }
 
+@media (max-width: 992px) {
+
+    #qr-code {
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) scale(3); /*resize QR disini*/
+        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    } /*gtw ini kok gbisa resize*/
+    
+    h1 {
+        font-size: 9vw !important;
+        margin: 0 22vw;
+    }
+
+    h2 {
+        font-size: 3vw !important;
+    }
+
+    .launching h1 {
+        font-size: 7vw !important;
+        margin: 1vh 29vw;
+    }
+
+    .launching h2 {
+        font-size: 2.1vw !important;
+    }
+    
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1.5vw;
+    }
+
+    .nav-menu ul li .link {
+        font-size: 3vw;
+    }
+
+    .nav-menu ul li {
+        margin: 1vh 0 !important;
+    }
+
+    .navbar-toggler {
+        border-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+        background-color: transparent;
+    }
+
+
+    .launch-btn {
+        font-size: 4vw;
+        padding: 1vh 3vw;
+    }
+
+    .qr-code {
+        width: 20vh !important;
+    }
+
+    
+}
