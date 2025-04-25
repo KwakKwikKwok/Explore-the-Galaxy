@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: url("Assets/Web/star-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    cursor: url('Assets/Cursor/cursor.cur'), auto;
+
+    font-family: 'Inria Serif', serif;
+}
+
+.navbar.custom-navbar {
+    background-color: transparent !important;
+    padding: 3vh 1vw !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nav-menu {
+    margin-left: auto;
+    margin-right: 1vw !important;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-menu ul li {
+    margin: 0 3vw !important;
+}
+
+.nav-menu ul li .link {
+    font-family: 'Inria Serif', serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white !important;
+    padding-bottom: 1vh !important;
+    margin: 0;
+    font-size: 1vw;
+}
+
+.link:hover, .active {
+    color: #e0e0e0 !important;
+    border-bottom: 2px solid white !important;
+    cursor: url('Assets/Cursor/cursor-hover.cur'), auto;
+}
+
+h1 {
+    width: 44vw;
+    margin: 0 auto;
+    font-family: 'Italiana', serif;
+    font-weight: 400 !important;
+    letter-spacing: 0.5em;
+    color: white !important; 
+    text-align: center;
+    font-size: 5.2vw !important;
+    margin-top: 8vh !important;
+    transition: font-size 1s ease-in-out;
+}
+
+h2{
+    text-align: center;
+    color: white !important;
+    font-family: 'Jura', serif;
+    font-weight: 700 !important;
+    font-size: 1.6vw !important;
+    transition: font-size 1s ease-in-out;
+}
+
+.btn-container{
+    display: grid;
+    place-items: center;
+    height: 10vh;
+}
+
+.launch-btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 1vh 3vw;
+    font-size: 1.8vw;
+    cursor: pointer !important;
+    border-radius: 30px;
+    font-family: 'Inria Serif', serif;
+    transition: opacity 1s ease-in-out;
+
+    cursor: url('Assets/Cursor/cursor-hover.cur'), auto !important;
+}
+
+.rocket-container {
+    position: relative;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 3s ease-out, opacity 3s ease-out;
+}
+
+.qr-code-container {
+    display: none;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    height: 40vh;
+    transition: opacity 1s ease-in-out;
+}
+
+.qr-code {
+    width: 10vh !important;
+}
+
+@keyframes rocket-fly {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-120vh);
+    }
+}
+
+.rocket-flying {
+    animation: rocket-fly 5s forwards;
+}
+
+.hide-button {
+    opacity: 0;
+}
+
+.show-qr {
+    display: block;
+    opacity: 1;
+}
+
