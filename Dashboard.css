@@ -14,7 +14,7 @@ body {
 
 .navbar.custom-navbar {
     background-color: transparent !important;
-    padding: 3vh 1vw !important;
+    padding: 1vh 1vw !important;
     border: none !important;
     box-shadow: none !important;
 }
@@ -49,7 +49,6 @@ body {
 .link:hover, .active {
     color: #e0e0e0 !important;
     border-bottom: 2px solid white !important;
-    cursor: url('Assets/Cursor/cursor-hover.cur'), auto;
 }
 
 h1 {
@@ -62,16 +61,15 @@ h1 {
     text-align: center;
     font-size: 5.2vw !important;
     margin-top: 8vh !important;
-    transition: font-size 1s ease-in-out;
 }
 
 h2{
     text-align: center;
     color: white !important;
+    letter-spacing: 0.1em;
     font-family: 'Jura', serif;
     font-weight: 700 !important;
-    font-size: 1.6vw !important;
-    transition: font-size 1s ease-in-out;
+    font-size: 1.4vw !important;
 }
 
 .btn-container{
@@ -89,55 +87,6 @@ h2{
     cursor: pointer !important;
     border-radius: 30px;
     font-family: 'Inria Serif', serif;
-    transition: opacity 1s ease-in-out;
-
-    cursor: url('Assets/Cursor/cursor-hover.cur'), auto !important;
-}
-
-.rocket-container {
-    position: relative;
-}
-
-.rocket {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: bottom 3s ease-out, opacity 3s ease-out;
-}
-
-.qr-code-container {
-    display: none;
-    position: absolute;
-    display: grid;
-    align-items: center;
-    height: 40vh;
-    transition: opacity 1s ease-in-out;
-}
-
-.qr-code {
-    width: 10vh !important;
-}
-
-@keyframes rocket-fly {
-    0% {
-        transform: translateX(-50%) translateY(0);
-    }
-    100% {
-        transform: translateX(-50%) translateY(-120vh);
-    }
-}
-
-.rocket-flying {
-    animation: rocket-fly 5s forwards;
-}
-
-.hide-button {
-    opacity: 0;
-}
-
-.show-qr {
-    display: block;
-    opacity: 1;
+    letter-spacing: 0.1em;
 }
 
