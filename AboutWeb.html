@@ -6,7 +6,7 @@
     <title>Galaxy [Journey Through Cosmos]</title>
 
     <link rel="icon" href="Assets/Icon web/icon.png" type="png">
-    <link rel="stylesheet" href="Dashboard.css" />
+    <link rel="stylesheet" href="AboutWeb.css" />
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
@@ -17,46 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Jura:wght@300..700&display=swap" rel="stylesheet">
-
-    <style>
-        #qr-code {
-            opacity: 0;
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translateX(-50%) scale(1.5);
-            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-        }
-
-        #rocket {
-            transition: transform 3s ease-out;
-        }
-
-        .launch-btn {
-            transition: opacity 2s ease-out;
-        }
-
-        h1, h2 {
-            transition: font-size 2s ease-out;
-        }
-
-        .launching h1 {
-            font-size: 4.4vw !important;
-        }
-
-        .launching h2 {
-            font-size: 1.05vw !important;
-        }
-
-        .launching .launch-btn {
-            opacity: 1;
-            transform: scale(0.7);
-        }
-
-        .launching h1, .launching h2 {
-            transition: font-size 2s ease-out;
-        }
-    </style>
 </head>
 
 <body>
@@ -64,7 +24,7 @@
           <nav class="navbar navbar-expand-lg custom-navbar" data-bs-theme="dark">
             <div class="container-fluid">
               <a href="Dashboard.html">
-                <img class="logo" src="Assets/Logo/Logo AKUT.png" alt="Logo">
+                <img class="logo" src="Assets/Logo/Logo AKUT.png" alt="Logo here?">
               </a>
           
               <!-- Tombol toggle -->
@@ -89,30 +49,12 @@
     <main>
         <h1>GALAXY</h1>
         <h2>Journey Through Cosmos</h2>
-
-        <div class="container-rocket container-fluid" style="max-width: 25%; position: relative;">
-            <img id="rocket" src="Assets/Web/Roket.png" alt="Rocket" class="img-fluid d-block mx-auto">
-            <img id="qr-code" src="Assets/Web/8code.svg" alt="QR Code" class="img-fluid">
-        </div>
-
-        <div class="btn-container">
-            <button class="launch-btn" onclick="launchRocket()">Launch AR</button>
+        <div class="content-container">
+            <p>This project was created to support children's learning activities. Many children tend to feel bored when faced with traditional learning visuals such as static images in books or on the internet. To address this, we offer a new, interactive learning medium using Augmented Reality (AR).</p><br>
+            <h3>What is AR?</h3>
+            <p>Augmented Reality (AR) is a technology that overlays digital elements—such as 3D models, animations, or information—onto the real world through a device like a smartphone or tablet. Unlike Virtual Reality, which creates an entirely virtual environment, AR enhances the real world by adding engaging and interactive content.<br><br>By integrating AR into education, we aim to make learning more immersive, fun, and effective. Children can explore concepts in a hands-on way, interact with learning materials, and stay more engaged throughout the process. This innovative approach not only helps students better understand the material but also encourages curiosity and active participation.</p>
         </div>
     </main>
-
-    <script>
-        function launchRocket() {
-            document.body.classList.add('launching');
-            document.getElementById("rocket").style.transform = "translateY(-100vh)";
-            document.getElementById("qr-code").style.opacity = 1;
-
-            const btn = document.querySelector(".launch-btn");
-            btn.textContent = "Open AR Link";
-            btn.onclick = function () {
-                window.location.href = "https://8th.io/2y67c";
-            };
-        }
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
