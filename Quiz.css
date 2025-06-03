@@ -58,54 +58,71 @@ body {
     border-bottom: 2px solid white !important;
 }
 
-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
 h1 {
-    width: 44vw;
-    margin: 0 auto;
     font-family: 'Italiana', serif;
-    font-weight: 400 !important;
-    letter-spacing: 0.5em;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em;
     color: white !important; 
     text-align: center;
-    font-size: 5.2vw !important;
-    margin-top: 8vh !important;
+    font-size: 3vw !important;
+    margin-bottom: 9vh !important;
 }
 
-h2{
-    text-align: center;
+h3{
+    text-align:justify;
     color: white !important;
     letter-spacing: 0.1em;
     font-family: 'Jura', serif;
     font-weight: 700 !important;
-    font-size: 1.4vw !important;
+    font-size: 1.3vw !important;
 }
 
-.content-container{
-    text-align: center;
-    max-width: 50vw;
-    padding: 20px;
-    margin-top: 5vh;
-    font-family: 'Jura', serif;
-    font-weight: 500 !important;
-    font-size: 1vw !important;
-}
-
-p{
-    color: white !important;
+.question-container{
+    width: 44vw;
     text-align: justify;
+    margin-bottom:8vh;
+    display: block;
+    margin-left: 0;
 }
 
-h3{
-    text-align:left;
+.answer {
+    text-align: justify;
+    color: white !important;
+    font-family: 'Jura', serif;
+    font-weight: 700 !important;
+    font-size: 1.2vw !important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9vh;
+  padding-bottom: 8vh;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6vh;
+    padding-right: 2vw;
+}
+
+.submit-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.5vh 2vw;
+    font-size: 1.2vw !important;
+    cursor: pointer !important;
+    border-radius: 30px !important;
+    font-family: 'Inria Serif', serif !important;
+    letter-spacing: 0.1em;
+    min-width: 4vw;
+}
+
+li {
     color: white !important;
     letter-spacing: 0.1em;
     font-family: 'Jura', serif;
@@ -124,7 +141,7 @@ h3{
   }
 }
 
-h1, h2 {
+h1, .btn-container{
   animation: zoomIn 2s ease forwards;
 }
 
@@ -139,40 +156,12 @@ h1, h2 {
   }
 }
 
-p, h3 {
+ol, .question-container {
   animation: fadeInEase 2s ease forwards;
-  animation-delay: 0.5s;
   opacity: 0;
 }
 
 @media (min-width: 601px) and (max-width: 992px) {
-    h1 {
-        font-size: 8vw !important;
-        margin: 0 15vw;
-        letter-spacing: 0.3em;
-    }
-
-    h2 {
-        font-size: 3.5vw !important;
-        margin: 0 15vw 2vh 15vw;
-    }
-
-    .content-container {
-        max-width: 90%;
-        width: 90%;
-        padding: 20px;
-        margin-top: 8vh;
-        font-size: 2.5vw !important;
-        text-align: justify;
-    }
-
-    h3 {
-        font-size: 2.7vw !important;
-        text-align: left;
-        margin: 1vh 5vw;
-        letter-spacing: 0.07em;
-    }
-
     .nav-menu ul {
         flex-direction: column;
         align-items: flex-start;
@@ -194,6 +183,12 @@ p, h3 {
     .navbar-toggler-icon {
         background-color: transparent;
     }
+
+    h1 {
+        font-size: 6vw !important;
+        margin: 0 5vw;
+        letter-spacing: 0.15em;
+    }
 }
 
 @media (max-width: 600px) {
@@ -201,30 +196,6 @@ p, h3 {
         font-size: 10vw !important;
         margin: 0 5vw;
         letter-spacing: 0.2em;
-    }
-
-    h2 {
-        font-size: 4vw !important;
-        margin: 0 5vw 2vh 5vw;
-    }
-
-    .content-container {
-        max-width: 95%;
-        width: 95%;
-        padding: 15px;
-        margin-top: 6vh;
-        font-size: 4vw !important;
-        text-align: justify;
-    }
-
-    h3 {
-        font-size: 4vw !important;
-        text-align: left;
-        letter-spacing: 0.05em;
-    }
-
-    p{
-       font-size: 3vw !important; 
     }
 
     .nav-menu ul {
@@ -248,4 +219,47 @@ p, h3 {
     .navbar-toggler-icon {
         background-color: transparent;
     }
+
+    h3{
+        text-align:justify;
+        color: white !important;
+        letter-spacing: 0.1em;
+        font-family: 'Jura', serif;
+        font-weight: 700 !important;
+        font-size: 2.5vw !important;
+    }
+
+    .question-container{
+        width: 60vw;
+        text-align: justify;
+        margin-bottom:8vh;
+        display: block;
+        margin-left: 0;
+    }
+
+    .answer {
+        text-align: justify;
+        color: white !important;
+        font-family: 'Jura', serif;
+        font-weight: 700 !important;
+        font-size: 2.3vw !important;
+    }
+
+    li {
+        color: white !important;
+        letter-spacing: 0.1em;
+        font-family: 'Jura', serif;
+        font-weight: 700 !important;
+        font-size: 2.5vw !important;
+    }
+
+    ol{
+        margin-left: 0;
+        padding-left: 0 !important;
+    }
+
+    input[type="radio"] {
+        transform: scale(0.5);
+    }
+
 }

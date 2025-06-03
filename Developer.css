@@ -70,7 +70,6 @@ main {
 }
 
 h1 {
-    /* width: 44vw; */
     margin: 0 auto;
     font-family: 'Italiana', serif;
     font-weight: 600 !important;
@@ -218,40 +217,6 @@ p, h3, .developer-photo {
 }
 
 @media (min-width: 601px) and (max-width: 992px) {
-    /* h1 {
-        font-size: 8vw !important;
-        margin: 0 15vw;
-        letter-spacing: 0.3em;
-    }
-
-    .content-container {
-        max-width: 90%;
-        width: 90%;
-        padding: 20px;
-        margin-top: 8vh;
-        font-size: 2.5vw !important;
-        text-align: justify;
-    }
-
-    h3 {
-        font-size: 2.7vw !important;
-        text-align: left;
-        margin: 1vh 5vw;
-        letter-spacing: 0.07em;
-    }
-
-    p {
-        font-size: 2.5vw !important;
-    }
-
-    .content-container {
-        max-width: 90%;
-        padding: 20px;
-        margin-top: 8vh;
-        font-size: 2.5vw !important;
-        text-align: justify;
-    } */
-
     .nav-menu ul {
         flex-direction: column;
         align-items: flex-start;
@@ -273,27 +238,6 @@ p, h3, .developer-photo {
     .navbar-toggler-icon {
         background-color: transparent;
     }
-
-    /* .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .developer-photo {
-        width: 35%;
-        margin: 0 0 2vh 0;
-    }
-
-    .quotes {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .quote-text {
-        font-size: 2.5vw;
-        width: 100%;
-        text-align: left;
-    } */
 
     h1 {
         font-size: 6vw !important;
@@ -319,28 +263,6 @@ p, h3, .developer-photo {
     p {
         font-size: 2.5vw !important;
     }
-
-    /* .nav-menu ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 2vw;
-    }
-
-    .nav-menu ul li {
-        margin: 1.2vh 0 !important;
-    }
-
-    .nav-menu ul li .link {
-        font-size: 3vw !important;
-    }
-
-    .navbar-toggler {
-        border-color: transparent;
-    }
-
-    .navbar-toggler-icon {
-        background-color: transparent;
-    } */
 
     .team-container {
         flex-direction: column;
@@ -474,16 +396,11 @@ p, h3, .developer-photo {
         width: 90vw;
     }
 
-    /* .quotes.right-quote {
-        flex-direction: row;
-    } */
-
     .quotes .quote-text {
         font-size: 3.5vw;
         text-align: justify;
     }
 
-    /* Optional: hilangkan gaya right khusus */
     .line.right {
         display: none;
     }
