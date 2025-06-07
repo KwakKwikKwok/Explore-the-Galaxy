@@ -130,6 +130,14 @@ li {
     font-size: 1.3vw !important;
 }
 
+.questionPict{
+    width: 20vw;
+}
+
+.ansPict{
+    width: 10vw;
+}
+
 @keyframes zoomIn {
   0% {
     transform: scale(0.5);
@@ -260,6 +268,10 @@ ol, .question-container {
 
     input[type="radio"] {
         transform: scale(0.5);
+    }
+
+    .ansPict{
+        margin-left: 3vw;
     }
 
 }
